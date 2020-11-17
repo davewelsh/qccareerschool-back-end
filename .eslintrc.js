@@ -1,0 +1,33 @@
+module.exports = {
+  env: {
+    node: true,
+  },
+  parser: '@typescript-eslint/parser',
+  plugins: [ '@typescript-eslint' ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  rules: {
+    '@typescript-eslint/explicit-member-accessibility': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'arrow-parens': [ 'error', 'as-needed' ],
+    'brace-style': [ 'error', '1tbs', { allowSingleLine: true } ],
+    'computed-property-spacing': 'error',
+    'comma-dangle': [ 'error', 'always-multiline' ],
+    'comma-spacing': 'error',
+    'eol-last': [ 'error', 'always' ],
+    'no-console': 'error',
+    'no-multiple-empty-lines': [ 'error', { max: 1, maxEOF: 0, maxBOF: 0 } ],
+    'no-trailing-spaces': 'error',
+    'object-curly-spacing': [ 'error', 'always' ],
+    'quote-props': [ 'error', 'consistent-as-needed' ],
+    'quotes': [ 'error', 'single' ],
+    'semi': 'error',
+    'space-in-parens': 'error',
+  },
+};
